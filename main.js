@@ -1,3 +1,3 @@
-const initServer = require('./index')
+const initServer = require('./server')
 
-//initServer();
+initServer();

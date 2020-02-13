@@ -1,4 +1,5 @@
-const {net, fs} = require('./index')
+const net = require('net');
+const fs = require('fs');
 
 
 
@@ -6,7 +7,10 @@ const {net, fs} = require('./index')
 const handBook = () => {
   console.log('HANDBOOK CALLED');
 
+  return 'NO BOOKS YET'
+
+
 }
 
 
-module.exports = {handBook}
+module.exports = handBook;
