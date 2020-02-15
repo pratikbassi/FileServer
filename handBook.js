@@ -5,7 +5,8 @@ const fs = require('fs');
 
 
 const handBook = () => {
-  console.log('HANDBOOK CALLED');
+
+  books = {}
 
   return 'NO BOOKS YET'
 

@@ -41,7 +41,7 @@ const initServer = () => {
     //socket.setRawMode('true');
 
 
-    socket.write('Type in (Y/y) + RETURN if you want a random book\n');
+    socket.write('Type in (Y/y) + RETURN if you want a random book\n', 'utf8');
 
     //--------------------------------------------------------
 
@@ -50,7 +50,7 @@ const initServer = () => {
       //socket.write('Thank you for this yummy data little leech:')
       if (data === 'y' || data === "Y") {
         console.log('data printing');
-        socket.write('handBook()');
+        socket.write(handBook(), 'utf8');
       }
     });
 
